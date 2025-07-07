@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    background: url('Images/Page-1.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Logo top-left */
+.logo {
+    font-size: 2.2em;
+    font-weight: bold;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.logo .italic {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.logo .normal {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* Hero text left-middle */
+.hero-text {
+    position: absolute;
+
+    left: 40px;
+    bottom: 50px;
+    transform: translateY(-50%);
+    max-width: 500px;
+}
+
+.hero-text h2 {
+    font-size: 3em;
+    line-height: 1.3em;
+}
+
+.hero-text em {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Book Now button bottom-right */
+.book-now {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.book-btn {
+    background-color: #00bfa5;
+    padding: 12px 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #019c88;
+}
+
+
+/* Page 2 – Features Section */
+.features {
+    display: flex;
+    background-color: #00796b;
+    color: white;
+    padding: 100px 40px;
+    /* ↑ increased from 60px */
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+.features-left {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+}
+
+.features-left h2 {
+    font-size: 2.5em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.features-left .italic {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.features-left .bold {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.features-left p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.features-right {
+    flex: 3;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature-card {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.feature-card h3 {
+    font-size: 1.2em;
+    margin: 15px 15px 5px 15px;
+}
+
+.feature-card p {
+    font-size: 0.95em;
+    padding: 0 15px 20px 15px;
+    line-height: 1.5;
+}
+
+
+/* Page 3 – Tour Packages */
+
+.packages {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #fdfcf8;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.section-title span {
+    font-style: italic;
+    font-weight: 700;
+    color: #00796b;
+}
+
+.package-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.package-card {
+    background: white;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.package-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.package-info {
+    padding: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.package-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.package-title h3 {
+    font-size: 1.2em;
+}
+
+.package-title .price {
+    font-weight: bold;
+}
+
+.package-info p {
+    font-size: 0.95em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.arrow-btn {
+    background-color: #00bfa5;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 50%;
+    font-size: 1.1em;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    transition: background 0.3s ease;
+}
+
+.arrow-btn:hover {
+    background-color: #019c88;
+}
+
+/* Page 4 – Services Section */
+.services {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #fdfcf8;
+    text-align: center;
+}
+
+
+.services .section-title {
+    font-size: 2.5em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.services .section-title span {
+    font-style: italic;
+    font-weight: bold;
+    color: #00796b;
+}
+
+.services .section-subtitle {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-card {
+    position: relative;
+    width: 250px;
+    height: 180px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.service-card h3 {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.4;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.testimonials-full {
+    height: 100vh;
+    background: url('Images/Page-5.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.testimonial-content {
+    width: 100%;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+
+.testimonial-content .section-title {
+    font-size: 2.8em;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+.testimonial-content .section-title span {
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px 20px;
+    border-radius: 15px;
+    width: 280px;
+    text-align: left;
+    backdrop-filter: blur(0.1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card .stars {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.testimonial-card p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.testimonial-card h4 {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+
+
+
+
+.book-section {
+    background-color: #000;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.book-header {
+    padding: 30px 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.8em;
+    color: white;
+}
+
+.logo-icon {
+    width: 22px;
+    height: auto;
+}
+
+.logo .italic {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.logo .normal {
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.booking-card {
+    background: url('Images/Page\ 6.jpg') no-repeat center center/cover;
+    border-radius: 20px;
+    height: 60vh;
+    margin: 0 auto;
+    max-width: 1100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.booking-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.booking-text h2 {
+    font-size: 2.8em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.booking-text h2 span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.booking-text p {
+    font-size: 1.1em;
+    color: #f0f0f0;
+}
+
+.footer {
+    padding: 50px 30px;
+    background-color: #000;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 40px;
+}
+
+.footer h4 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #ccc;
+    font-size: 0.95em;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 8px;
+    font-size: 1.3em;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #00bfa5;
+}
