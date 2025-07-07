@@ -12,7 +12,7 @@ html {
 
 .hero {
     height: 100vh;
-    background: url('Images/Page-1.jpg') no-repeat center center/cover;
+    background: url('images/Page-1.jpg') no-repeat center center/cover;
     position: relative;
 }
 
@@ -321,7 +321,7 @@ html {
 
 .testimonials-full {
     height: 100vh;
-    background: url('Images/Page-5.jpg') no-repeat center center/cover;
+    background: url('images/Page-5.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -424,7 +424,7 @@ html {
 }
 
 .booking-card {
-    background: url('Images/Page\ 6.jpg') no-repeat center center/cover;
+    background: url('images/Page\ 6.jpg') no-repeat center center/cover;
     border-radius: 20px;
     height: 60vh;
     margin: 0 auto;
